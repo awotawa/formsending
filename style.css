@@ -119,13 +119,13 @@ form {
 }
 
 .checkbox {
-  color:#9a9ae1;
+  color:#866bd6;
   margin: 1.25em 1em;
 }
 
 .checkboxes .checkbox:checked + label {
   color : #fff;
-  background-color: #9a9ae1;
+  background-color: #866bd6;
   padding: 0.5em;
   margin: 0.5em;
 }
