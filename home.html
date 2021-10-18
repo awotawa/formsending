@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">-->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <title>MDKA</title>
+</head>
+<body>
+    <h1>Landing Page</h1>
+
+    <div class="container-carousel" data-autoplay="true">
+        <div class="slide"> <img
+                src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="nature" /></div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1446292532430-3e76f6ab6444?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=804&q=80"
+                alt="nature" />
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                alt="nature" />
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="nature" />
+        </div>
+
+        <button class="prev nav-button" onclick="prev()"><i class="fa fa-angle-left"></i></button>
+        <button class="next nav-button" onclick="next()"><i class="fa fa-angle-right"></i></button>
+
+
+    </div>
+    <div class="dots_container" id="indicator"></div>
+    <p class="text-banner">
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <form action="https://formsubmit.co/awotawa@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Demande de mise en contact">
+        <input type="text" name="_honey" style="display:none"> <!--This helps foil scrappers-->
+        <input type="hidden" name="_template" value="table"> <!--Template for receiving the results in a table format-->
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> <!--Redirecting to the personnalized Thank You page-->
+        <div class="inputs">
+            <h3>M'aider à trouver une formation</h3>
+            <hr>
+            <div class="row input-container">
+                <input type="text" name="last_name" placeholder="Nom" required>
+                <label for="last_name" class="bold">Nom:</label>
+            </div>
+            <div class="row input-container">
+                <input type="text" name="first_name" placeholder="Prénom" required>
+                <label for="first_name" class="bold">Prénom:</label>
+            </div>
+            <div class="row input-container">
+                <input type="email" name="email" placeholder="Adresse mail" required>
+                <label for="email" class="bold">Email:</label>
+            </div>
+            <div class="row input-container">
+                <input type="number" name="age" placeholder="Age" required>
+                <label for="age" class="bold">Âge:</label>
+            </div>
+            <div class="row box">
+                <label for="situation" class="bold">Situation professionnelle:</label>
+                <select name="situation" id="situation-select" required>
+                    <option value="">Choisir une des options</option>
+                    <option value="salarie">Salarié</option>
+                    <option value="independant">Indépendant</option>
+                    <option value="chomage">Chômage</option>
+                    <option value="autoentrepreneur">Auto-entrepreneur</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="formation" class="bold">Domaine(s) de formation(s) souhaitée(s):</label>
+                <div class="checkboxes">
+                    <input type="checkbox" id="marketing" name="marketing" class="checkbox">
+                    <label for="marketing">Marketing</label>
+                    <input type="checkbox" id="marketingdigital" name="marketingdigital" class="checkbox">
+                    <label for="marketingdigital">Marketing Digital</label>
+                    <input type="checkbox" id="management" name="management" class="checkbox">
+                    <label for="management">Management</label>
+                    <br>
+                    <input type="checkbox" id="gestiondentreprise" name="gestiondentreprise" class="checkbox">
+                    <label for="gestiondentreprise">Gestion d'entreprise</label>
+                    <input type="checkbox" id="comptabilite" name="comptabilite" class="checkbox">
+                    <label for="comptabilite">Compatibilité</label>
+                    <input type="checkbox" id="langue" name="langue" class="checkbox">
+                    <label for="langue">Langue</label>
+                    <br>
+                    <input type="checkbox" id="informatique" name="informatique" class="checkbox">
+                    <label for="informatique">Informatique</label>
+                    <input type="checkbox" id="rh" name="rh" class="checkbox">
+                    <label for="rh">RH</label>
+                    <input type="checkbox" id="developpementpersonnel" name="developpementpersonnel" class="checkbox">
+                    <label for="developpementpersonnel">Développement personnel</label>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn">Envoyer</button>
+            </div>
+        </div>
+   </form>
+   <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="col-md-6 item text bottom">
+                    <h3>Company Name</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                <p class="copyright">Company Name © 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script> var slide = document.getElementsByClassName("slide");
+        var indicator = document.getElementById("indicator");
+        var dots = document.getElementsByClassName("dots");
+        var autoplay = document.getElementsByClassName("container")[0].getAttribute("data-autoplay");
+        var l = slide.length;
+        var interval = 5000;
+        var set;
+
+        window.onload = function () {
+            initialize();
+            slide[0].style.opacity = "1";
+            for (var j = 0; j < l; j++) {
+                indicator.innerHTML += "<div class='dots' onclick=change(" + j + ")></div>";
+            }
+
+            dots[0].style.background = "#696969";
+
+        }
+
+        function initialize() {
+            if (autoplay === "true")
+                set = setInterval(function () { next(); }, interval);
+        }
+
+
+
+        function change(index) {
+            clearInterval(set);
+            count = index;
+            for (var j = 0; j < l; j++) {
+                slide[j].style.opacity = "0";
+                dots[j].style.background = "#bdbdbd";
+            }
+            slide[count].style.opacity = "1";
+            dots[count].style.background = "#696969";
+
+
+        }
+
+        var count = 0;
+        function next() {
+            clearInterval(set);
+            slide[count].style.opacity = "0";
+            count++;
+            for (var j = 0; j < l; j++) {
+                dots[j].style.background = "#bdbdbd";
+            }
+
+
+            if (count == l) {
+                count = 0;
+                slide[count].style.opacity = "1";
+                dots[count].style.background = "#696969";
+
+            } else {
+                slide[count].style.opacity = "1";
+                dots[count].style.background = "#696969";
+            }
+            initialize()
+        }
+
+
+        function prev() {
+            clearInterval(set);
+            slide[count].style.opacity = "0";
+            for (var j = 0; j < l; j++) {
+                dots[j].style.background = "#bdbdbd";
+            }
+            count--;
+
+            if (count == -1) {
+                count = l - 1;
+                slide[count].style.opacity = "1";
+                dots[count].style.background = "#696969";
+
+            } else {
+                slide[count].style.opacity = "1";
+                dots[count].style.background = "#696969";
+            }
+            initialize()
+        }</script>
+</body>
+</html>
