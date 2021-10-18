@@ -49,7 +49,7 @@ form {
   
 /* Styling for the Dropdown */
   .box select {
-    background-color: #9a9ae1;
+    background-color: #6b6bd6;
     color: white;
     padding: 0.5em;
     margin-top: -0.5em;
@@ -137,12 +137,12 @@ form {
 /* Button Styling */
 .btn {
   color: #fff;
-  background-color: #9a9ae1;
+  background-color: #6b6bd6;
   border-radius: 5px;
   font-size: 18px;
   padding: 0.5em 1.5em;
   border-style: solid;
-  border-color: #9a9ae1;
+  border-color: #6b6bd6;
 }
 
 .btn:hover {
